@@ -1,0 +1,130 @@
+/***ALLNOTES,PHP***/
+html {
+  font-size: 67.5%;
+}
+body {
+  /* padding: 0% 2%; */
+  margin: 0;
+  /* padding: 1%; */
+  background-color: rgb(194, 194, 194);
+}
+h2 {
+  color: rgb(224, 224, 224);
+  font-size: 2rem;
+}
+.pri-head {
+  font-size: 3rem;
+  color: rgb(165, 224, 142);
+  font-family: sans-serif;
+}
+.main-head {
+  font-size: 2.2rem;
+  margin-bottom: 0rem;
+  padding: 2% 1% 0;
+  color: rgb(28, 61, 133);
+  font-family: sans-serif;
+}
+.para {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 8px;
+  color: rgb(117, 117, 117);
+  /* background-color: rgb(211, 181, 50); */
+  padding: 1%;
+  border-radius: 1rem;
+}
+.grid {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-items: center;
+  flex-direction: row-reverse;
+}
+button {
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1%;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.edit {
+  background-color: rgb(101, 160, 236);
+  padding: 1rem;
+  color: white;
+}
+.delete {
+  background-color: rgb(255, 80, 80);
+  padding: 1rem;
+  color: white;
+}
+.logout {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: red;
+  color: white;
+}
+.create-note {
+  position: fixed;
+  top: 15px;
+  right: 80px;
+  background-color: blue;
+  color: white;
+  padding: 1%;
+}
+.main-div {
+  background-color: rgba(41, 75, 167, 0.741);
+  padding: 1% 1% 0;
+  margin: 0 0;
+  margin-top: -1.4rem;
+}
+.note-div {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0 1rem 1px;
+  width: 50%;
+  margin: 4rem auto;
+  /* overflow-x: scroll; */
+  box-shadow: 0 0.4rem 1.5rem 0rem rgb(121 121 121 / 70%);
+}
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.note-main {
+  overflow-x: auto;
+}
+/******* UPDATE.PHP ********/
+.update-form {
+  width: 30%;
+  margin: 2rem auto;
+}
+.update-body {
+  background-color: rgb(154, 194, 221);
+}
+
+.update-legend {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(97, 97, 97);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 4px;
+}
+.update-input {
+  width: 100%;
+  line-height: 2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.update-heading {
+  color: rgb(16, 82, 78);
+}
+.update-button {
+  padding: 1rem;
+  /* width: 2rem; */
+  margin: 0 auto;
+  /* left: 50%; */
+}
