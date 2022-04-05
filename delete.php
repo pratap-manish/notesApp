@@ -36,7 +36,7 @@ $result = $conn->query($sql);
         <input type="hidden" name="delid" value="<?php echo $delid ?>">
         <h2 class="del-head">Note <?php echo $row2['title']; ?> will be deleted</h2>
         <br>
-        <button class="cancel"><a href="allnotes.php">Cancel</a></button>
+        <a style="position:relative;left:43%;text-decoration:none;color:white;padding:1%;background-color:black;border-radius:1rem;" href="allnotes.php">Cancel</a>
         <button class="delete" style="position:relative;left:48%;transform:translate(-50%,0)" type="submit" >Confirm delete</button>
     </form>
 
