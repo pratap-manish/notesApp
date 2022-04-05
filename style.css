@@ -2,27 +2,43 @@
 html {
   font-size: 67.5%;
 }
+.html {
+  font-size: 80%;
+}
+.html-2 {
+  font-size: 77.25%;
+}
 body {
   /* padding: 0% 2%; */
+  font-family: "ubuntu", sans-serif;
   margin: 0;
   /* padding: 1%; */
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
 }
 h2 {
-  color: rgb(224, 224, 224);
+  color: rgb(46, 46, 46);
   font-size: 2rem;
+  margin-top: 2rem;
 }
 .pri-head {
   font-size: 3rem;
-  color: rgb(165, 224, 142);
-  font-family: sans-serif;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  margin-top: -4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .main-head {
   font-size: 2.2rem;
   margin-bottom: 0rem;
   padding: 2% 1% 0;
   color: rgb(28, 61, 133);
-  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.head-float {
+  /* position: fixed;
+  top: 0;
+  z-index: 1; */
 }
 .para {
   display: inline-block;
@@ -41,6 +57,10 @@ h2 {
   display: flex;
   justify-items: center;
   flex-direction: row-reverse;
+}
+.btn {
+  transform: scale(1.05);
+  padding: 0%;
 }
 button {
   font-size: 1.4rem;
@@ -64,22 +84,30 @@ button {
   position: fixed;
   top: 15px;
   right: 20px;
-  background-color: red;
+  background-color: rgb(252, 98, 98);
   color: white;
 }
 .create-note {
   position: fixed;
   top: 15px;
   right: 80px;
-  background-color: blue;
+  background-color: rgb(47, 183, 201);
   color: white;
   padding: 1%;
 }
 .main-div {
-  background-color: rgba(41, 75, 167, 0.741);
-  padding: 1% 1% 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
+  /* padding: 1% 1% 0; */
   margin: 0 0;
-  margin-top: -1.4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+}
+.all-notes {
+  margin-top: 0px;
+  margin-top: 151px;
 }
 .note-div {
   background-color: #fff;
@@ -88,7 +116,7 @@ button {
   width: 50%;
   margin: 4rem auto;
   /* overflow-x: scroll; */
-  box-shadow: 0 0.4rem 1.5rem 0rem rgb(121 121 121 / 70%);
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 17%), 0 2px 4px rgb(0 0 0 / 15%);
 }
 .notes {
   display: grid;
@@ -115,16 +143,52 @@ button {
 }
 .update-input {
   width: 100%;
-  line-height: 2rem;
+  line-height: 3rem;
   border-radius: 0.6rem;
   margin-bottom: 1rem;
+  border: none;
 }
 .update-heading {
-  color: rgb(16, 82, 78);
+  color: rgb(15, 19, 18);
+  text-align: center;
+  font-size: 2.4rem;
 }
 .update-button {
-  padding: 1rem;
+  padding: 0.7rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   /* width: 2rem; */
-  margin: 0 auto;
+  margin: 0;
   /* left: 50%; */
+}
+/* DELETE.PHP */
+.del-head {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(72, 64, 97);
+  font-family: sans-serif;
+}
+.cancel {
+  position: relative;
+  left: 43%;
+  background-color: rgba(0, 0, 0, 0.723);
+  transform: translate(-50%, 0);
+  transform: scale(0.8);
+}
+.cancel a {
+  color: #fff;
+  text-decoration: none;
+}
+/* notedelete */
+.delete-head {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: cadetblue;
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+.vh-100 {
+  margin-top: 0rem;
 }

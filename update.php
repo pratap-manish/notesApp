@@ -26,7 +26,7 @@ if(isset($_POST['id']) && isset($_POST['title']) && isset($_POST['content'])){
 </head>
 <body class="update-body">
     <form class="update-form" action="updateinmysql.php" method="post">
-        <h2 class="update-heading">Update note</h2>
+        <h2 class="update-heading">Edit note</h2>
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <br>
         

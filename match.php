@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+
 <?php
 
 
@@ -32,7 +34,11 @@ if(isset($_POST['username']) && isset($_POST['pass'])){
         }
     }
     else{
-        echo "username or password incorrect <br> <a href='login.php'>Login again</a>";
+        ?>
+        <h2 class="main-head" style="text-align:center;">username or password incorrect</h2>
+        <button style="position:relative;transform:translate(-50%,0);left:50%;padding:0;margin-top:2rem;"><a style="text-decoration:none;font-size:1.8rem;margin:0 auto;padding:1rem;background-color:#6DBAF2;border-radius:1rem;color:white;" href="login.php">Login Again</a></button>
+
+        <?php
     }
 
 

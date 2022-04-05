@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+
 <?php
     include 'conn.php';
     if($success == true){
@@ -21,12 +23,13 @@
 
                             $sql = "DELETE FROM `notes` WHERE id='$id' ";
                             if ($conn->query($sql) === TRUE) {
-                                echo "Record deleted successfully <br> redirecting to homepage in 4 seconds"
+                                ?>
+                               <h2 class="delete-head">Note deleted successfully <br> redirecting to homepage in 3 seconds</h2> <?php 
                                 ?> <script>
                                 function pageRedirect() {
                                     window.location.replace("allnotes.php");
                                 }      
-                                setTimeout("pageRedirect()", 3500);
+                                setTimeout("pageRedirect()", 2500);
                             </script> <?php
                             } else {
                                 echo "Error deleting record: " . $conn->error;

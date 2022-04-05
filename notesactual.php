@@ -16,7 +16,10 @@
   </head>
   <body>
     <section class="vh-100">
-      <div class="container-fluid h-custom">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
        
 
 
@@ -25,11 +28,16 @@
 
 
             <form method="POST" action="notescreated.php">
-              
+            <div
+                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+              >
+                <p class="lead fw-normal mb-0 me-3" style="margin-bottom :30px;">Create New Note</p>
+                
+              </div>
              
 
               <!-- Email input -->
-              <div class="form-outline mb-4" style="margin-top:4rem;width:26.5rem;">
+              <div class="form-outline mb-4" style="margin-top:2rem;width:26.5rem;">
                 <input
                   type="text"
                   id="form3Example3"
@@ -72,9 +80,9 @@
           </div>
         </div>
       </div>
-      <div
+      <!-- <div
         class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary"
-        style="margin-top:10rem;" >
+        style="margin-top:17rem;" >
         <!-- Copyright -->
         <div class="text-white mb-3 mb-md-0">
           Copyright © 2022. All rights reserved.
@@ -84,7 +92,7 @@
         <!-- Right -->
         
         <!-- Right -->
-      </div>
+      </div> -->
     </section>
 
     <script

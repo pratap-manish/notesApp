@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 <?php
@@ -33,9 +34,10 @@ $result = $conn->query($sql);
             ?>
     <form method="POST" action="notedelete.php">
         <input type="hidden" name="delid" value="<?php echo $delid ?>">
-        <h2>Note <?php echo $row2['title']; ?> will be deleted</h2>
+        <h2 class="del-head">Note <?php echo $row2['title']; ?> will be deleted</h2>
         <br>
-        <button type="submit" >Confirm delete</button>
+        <button class="cancel"><a href="allnotes.php">Cancel</a></button>
+        <button class="delete" style="position:relative;left:48%;transform:translate(-50%,0)" type="submit" >Confirm delete</button>
     </form>
 
     <?php } } }?>
